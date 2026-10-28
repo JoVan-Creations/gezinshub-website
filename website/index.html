@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GezinsHub · Binnenkort</title>
+  <meta name="description" content="GezinsHub brengt het huishouden van je gezin samen: eten en boodschappen, agenda, taken en geld. Binnenkort beschikbaar.">
+  <meta property="og:title" content="GezinsHub · Binnenkort">
+  <meta property="og:description" content="Het huishouden van je gezin, op één plek. We testen nu met een paar gezinnen.">
+  <meta name="theme-color" content="#276a32">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='224' fill='%23276a32'/%3E%3Cpath d='M646 352 L842 520 L812 520 L812 774 L480 774 L480 520 L450 520 Z' fill='%23deac80' stroke='%23deac80' stroke-width='48' stroke-linejoin='round'/%3E%3Cpath d='M404 262 L640 462 L604 462 L604 774 L204 774 L204 462 L168 462 Z' fill='%23fff' stroke='%23fff' stroke-width='48' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --brand: #276a32;
+      --brand-dark: #1d5026;
+      --tan: #deac80;
+      --tan-light: #f2dcc6;
+      --bg: #f4f6f2;
+      --surface: #ffffff;
+      --text: #1d2a1f;
+      --muted: #5b6b5e;
+      --border: #dfe5dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111813;
+        --surface: #1a231c;
+        --text: #eef2ec;
+        --muted: #a7b5aa;
+        --border: #2b372e;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+    }
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 28px;
+    }
+    .logo {
+      width: 112px;
+      height: 112px;
+      border-radius: 28px;
+      background: var(--brand);
+      box-shadow: 0 12px 32px rgba(39, 106, 50, 0.25);
+    }
+    .logo svg { width: 100%; height: 100%; display: block; }
+    .name {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      color: var(--brand);
+    }
+    @media (prefers-color-scheme: dark) { .name { color: var(--tan); } }
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--tan-light);
+      color: #6b4520;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 7vw, 44px);
+      line-height: 1.15;
+      font-weight: 800;
+    }
+    .lead {
+      margin: 0;
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 34em;
+    }
+    .features {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      text-align: left;
+    }
+    .features li {
+      padding: 16px;
+      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+    .features strong { display: block; font-size: 16px; }
+    .features span { display: block; font-size: 14px; color: var(--muted); }
+    .cta {
+      width: 100%;
+      padding: 24px 20px;
+      border-radius: 16px;
+      background: var(--brand);
+      color: #ffffff;
+    }
+    .cta p { margin: 0 0 16px; font-size: 16px; }
+    .cta a {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 12px;
+      background: #ffffff;
+      color: var(--brand-dark);
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .cta a:hover, .cta a:focus-visible { background: var(--tan-light); }
+    footer {
+      padding: 24px 20px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (max-width: 420px) {
+      main { padding-top: 40px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo" role="img" aria-label="Logo van GezinsHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" aria-hidden="true">
+        <g transform="translate(7 -6)">
+          <mask id="shared" maskUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+            <rect width="1024" height="1024" fill="#000" />
+            <path d="M646 352 L842 520 L812 520 L812 774 L480 774 L480 520 L450 520 Z" fill="#fff" stroke="#fff" stroke-width="48" stroke-linejoin="round" />
+          </mask>
+          <path d="M646 352 L842 520 L812 520 L812 774 L480 774 L480 520 L450 520 Z" fill="#deac80" stroke="#deac80" stroke-width="48" stroke-linejoin="round" />
+          <path d="M404 262 L640 462 L604 462 L604 774 L204 774 L204 462 L168 462 Z" fill="#ffffff" stroke="#ffffff" stroke-width="48" stroke-linejoin="round" />
+          <path d="M404 262 L640 462 L604 462 L604 774 L204 774 L204 462 L168 462 Z" fill="#f2dcc6" stroke="#f2dcc6" stroke-width="48" stroke-linejoin="round" mask="url(#shared)" />
+        </g>
+      </svg>
+    </div>
+
+    <p class="name">GezinsHub</p>
+    <span class="badge">Binnenkort</span>
+
+    <h1>Het huishouden van je gezin, op één plek.</h1>
+    <p class="lead">
+      Wat er gegeten wordt, wie wat doet en wat er betaald moet worden:
+      GezinsHub houdt het bij voor iedereen thuis. En post die binnenkomt, leest
+      de app voor je.
+    </p>
+
+    <ul class="features">
+      <li><strong>Eten</strong><span>Weekmenu, recepten en één boodschappenlijst voor het hele gezin.</span></li>
+      <li><strong>Agenda</strong><span>Afspraken, roosters en verjaardagen van iedereen samen.</span></li>
+      <li><strong>Taken</strong><span>Wie doet wat in huis, met herinneringen op tijd.</span></li>
+      <li><strong>Brievenbus</strong><span>Een foto van een brief of een doorgestuurde mail, en het staat op de juiste plek.</span></li>
+    </ul>
+
+    <section class="cta">
+      <p>We testen GezinsHub nu met een paar gezinnen. Wil je meedoen of op de hoogte blijven?</p>
+      <a href="mailto:hallo@gezinshub.be?subject=Ik%20wil%20GezinsHub%20testen">Mail hallo@gezinshub.be</a>
+    </section>
+  </main>
+
+  <footer>© 2026 GezinsHub</footer>
+</body>
+</html>
